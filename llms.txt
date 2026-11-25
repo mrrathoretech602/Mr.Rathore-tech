@@ -1,0 +1,22 @@
+# Mr. Rathore Tech
+
+> Deep-tech software and systems engineering company led by Founder & Principal Engineer Mahipal Singh Rathore in Bhinmal, Rajasthan, India.
+
+## Official Links
+- Website: https://mrrathore-tech.vercel.app/
+- Business Email: rathoretecnology@gmail.com
+- GitHub: https://github.com/mrrathoretech602
+- LinkedIn: https://www.linkedin.com/in/mr-rathore-759236388/
+- YouTube: https://www.youtube.com/@Mr.Rathore-q4o
+
+## Core Engineering Pillars
+- C++ 3D Game Engine Architecture (EKASHRINGA / Bharatverse Engine — C++17/20, OpenGL/Vulkan, ECS, Physics)
+- Offline-First Local AI Platforms & Automation (NETRA AI, NeuroAI, RAIN reasoning R&D)
+- Developer Software & Interactive 3D Web Systems (RathoreScan 3D, MRL 3.2.0 Runtime, CORE-FLOW Workspace, Three.js/WebGL interfaces)
+
+## Flagship Products
+- [EKASHRINGA 3D Engine](https://ekarshinga-engine.netlify.app/): Native C++ desktop 3D game engine and world editor.
+- [RathoreScan 3D Studio](https://rathorescan3d.vercel.app/): Self-hosted 360-degree video-to-3D photogrammetry pipeline (C++17, Go, Three.js).
+- [MRL 3.2.0 Runtime](https://mrl-hi.netlify.app/): Multi-runtime language compiler and bytecode VM.
+- [CORE-FLOW Workspace](https://core-flow-website-offi.netlify.app/): Windows desktop execution and deep-work workspace.
+- [Thar Frontier (1971)](https://thar-fronteir.vercel.app/): 2.5D WebGL and Windows tactical adventure.

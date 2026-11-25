@@ -38,13 +38,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
 
-  <!-- Primary Organization Structured Data (SSR + SEO Engine Hooks) -->
+  <!-- Primary Organization, WebSite, Product, FAQ & Breadcrumb Structured Data (SSR + Dynamic SEO Engine) -->
   <script id="organization-schema" type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Mr. Rathore Tech",
-    "alternateName": ["Mr. Rathore Tech Company", "Mr. Rathore"],
+    "alternateName": ["Mr. Rathore Tech Company", "Mr. Rathore", "Mr Rathore Tech", "Mr.Rathore", "mrrathore-tech"],
     "url": "https://mrrathore-tech.vercel.app/",
     "logo": "https://mrrathore-tech.vercel.app/assets/logo-512.png",
     "image": "https://mrrathore-tech.vercel.app/assets/ekarshinga-hero.png",
@@ -82,10 +82,85 @@
     ]
   }
   </script>
-  <script id="website-schema" type="application/ld+json"></script>
-  <script id="product-schema" type="application/ld+json"></script>
-  <script id="faq-schema" type="application/ld+json"></script>
-  <script id="breadcrumb-schema" type="application/ld+json"></script>
+  <script id="website-schema" type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Mr. Rathore Tech",
+    "alternateName": ["Mr. Rathore", "Mr Rathore Tech", "Mr.Rathore"],
+    "url": "https://mrrathore-tech.vercel.app/",
+    "description": "Mr. Rathore Tech engineers native C++ 3D game engines (EKASHRINGA), offline-first local AI platforms, developer runtimes (MRL 3.2.0), and high-performance 3D web systems.",
+    "inLanguage": ["en-US", "en-IN"]
+  }
+  </script>
+  <script id="product-schema" type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Mr. Rathore Tech Flagship Platforms & Software",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "EKASHRINGA 3D Engine (Bharatverse)", "url": "https://ekarshinga-engine.netlify.app/" },
+      { "@type": "ListItem", "position": 2, "name": "RathoreScan 3D Studio", "url": "https://rathorescan3d.vercel.app/" },
+      { "@type": "ListItem", "position": 3, "name": "Local AI Suite (NETRA & NeuroAI)", "url": "https://mrrathore-tech.vercel.app/#products" },
+      { "@type": "ListItem", "position": 4, "name": "MRL 3.2.0 Runtime", "url": "https://mrl-hi.netlify.app/" },
+      { "@type": "ListItem", "position": 5, "name": "CORE-FLOW Workspace", "url": "https://core-flow-website-offi.netlify.app/" },
+      { "@type": "ListItem", "position": 6, "name": "Thar Frontier (1971)", "url": "https://thar-fronteir.vercel.app/" }
+    ]
+  }
+  </script>
+  <script id="faq-schema" type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What core technologies does Mr. Rathore Tech specialize in?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Mr. Rathore Tech specializes in native C++17/20 3D game engine architecture (EKASHRINGA), offline-first local AI platforms and automation, and high-performance WebGL/Three.js web systems."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can businesses hire Mr. Rathore Tech for custom builds?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Businesses partner with Mr. Rathore Tech for custom local AI workflows, interactive 3D web experiences, native desktop applications, and backend automation pipelines."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How are software downloads packaged and verified?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Official installers and source archives are distributed directly alongside SHA256SUMS.txt so engineering teams can verify integrity prior to installation."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do Mr. Rathore Tech AI platforms require constant internet connectivity?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Our local AI architecture is designed around offline-first inference and local document indexing so organizations retain full control over proprietary data."
+        }
+      }
+    ]
+  }
+  </script>
+  <script id="breadcrumb-schema" type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://mrrathore-tech.vercel.app/" },
+      { "@type": "ListItem", "position": 2, "name": "Products", "item": "https://mrrathore-tech.vercel.app/#products" },
+      { "@type": "ListItem", "position": 3, "name": "Solutions", "item": "https://mrrathore-tech.vercel.app/#solutions" },
+      { "@type": "ListItem", "position": 4, "name": "Architecture", "item": "https://mrrathore-tech.vercel.app/#architecture" },
+      { "@type": "ListItem", "position": 5, "name": "Contact", "item": "https://mrrathore-tech.vercel.app/#contact" }
+    ]
+  }
+  </script>
 
   <style>
     :root {
