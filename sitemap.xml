@@ -6,13 +6,13 @@
   <!-- 1. Main Official Portal (Vercel Production - Mr. Rathore Official) -->
   <url>
     <loc>https://mrrathore-tech.vercel.app/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>always</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://mrrathore-tech.vercel.app/assets/showcase-shot.jpg</image:loc>
       <image:title>Mr. Rathore (Mr.Rathore) Official Website &amp; Tech Company</image:title>
-      <image:caption>Official portal of Mr. Rathore (Mahipal Singh Rathore). 100+ categories web development, RainAGI 5.0 AI, C++ 3D Game Engine.</image:caption>
+      <image:caption>Official platform for Mr. Rathore Tech Company. AI platforms (NETRA AI, RAIN AGI), C++ 3D Game Engine (Bharatverse/Ekarshinga), and software tools.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://mrrathore-tech.vercel.app/assets/logo-192.png</image:loc>
@@ -20,52 +20,44 @@
     </image:image>
   </url>
 
-  <!-- 2. Main Official Portal (GitLab Architecture) -->
-  <url>
-    <loc>https://rmahipalsingh602-group.gitlab.io/rmahipalsingh602-project/</loc>
-    <lastmod>2026-11-08</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://rmahipalsingh602-group.gitlab.io/rmahipalsingh602-project/assets/showcase-shot.jpg</image:loc>
-      <image:title>Mr. Rathore Tech Company AI, Desktop Apps &amp; Developer Tools</image:title>
-      <image:caption>Official product home for AI tools, C++ 3D Game Engine, CORE-FLOW, and developer software.</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://rmahipalsingh602-group.gitlab.io/rmahipalsingh602-project/assets/ekarshinga-hero.png</image:loc>
-      <image:title>Bharatverse 3D Game Engine (Ekarshinga)</image:title>
-      <image:caption>Native C++17 3D game engine and open world editor for Windows x64.</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://rmahipalsingh602-group.gitlab.io/rmahipalsingh602-project/assets/coreflow-shot.jpg</image:loc>
-      <image:title>CORE-FLOW Quest Workspace for Windows</image:title>
-    </image:image>
-  </url>
 
   <!-- 2. Main Official Netlify Architecture -->
   <url>
     <loc>https://mr-rathore-company-site.netlify.app/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://mr-rathore-company-site.netlify.app/assets/showcase-shot.jpg</image:loc>
-      <image:title>Mr. Rathore Tech Company &amp; Mahipal Singh Rathore Portfolio</image:title>
+      <image:title>Mr. Rathore Tech Company Official Software &amp; Platform</image:title>
     </image:image>
   </url>
 
   <!-- 3. Ekarshinga C++ 3D Game Engine Flagship Portal -->
   <url>
     <loc>https://ekarshinga-engine.netlify.app/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+  </url>
+
+  <!-- 4. THAR FRONTIER: A Soldier's Promise · 1971 Game Portal -->
+  <url>
+    <loc>https://thar-fronteir.vercel.app/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://mrrathore-tech.vercel.app/assets/thar-battle-scene.png</image:loc>
+      <image:title>THAR FRONTIER: A Soldier's Promise (1971)</image:title>
+      <image:caption>Cinematic 2.5D historical action adventure set during the Battle of Longewala, 1971.</image:caption>
+    </image:image>
   </url>
 
   <!-- 4. CORE-FLOW Official Workspace & Documentation -->
   <url>
     <loc>https://core-flow-website-offi.netlify.app/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -73,7 +65,7 @@
   <!-- 5. MRL 3.2.0 Multi Runtime Language & Compiler Documentation -->
   <url>
     <loc>https://mrl-hi.netlify.app/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -81,7 +73,7 @@
   <!-- 6. Pocket Gamer Mobile Gaming Web Property -->
   <url>
     <loc>https://pocket-gamer.netlify.app/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>

@@ -3,7 +3,7 @@
  * AUTONOMOUS DAILY SELF-EVOLVING SEO & GEO KNOWLEDGE ENGINE (v4.0)
  * Domains: AI · Tech · Gaming · 3D Graphics · Full-Stack Software
  * Target Platforms: Google, Bing, Perplexity AI, ChatGPT Search, Gemini, Yahoo, DuckDuckGo
- * Entity: Mahipal Singh Rathore | Mr. Rathore Tech Company
+ * Entity: Mr. Rathore Tech Company
  * ==========================================================================
  */
 
@@ -20,7 +20,7 @@
 
   const vercelUrl = 'https://mrrathore-tech.vercel.app/';
   const fallbackUrl = 'https://mrrathore-tech.vercel.app/';
-  const gitlabUrl = 'https://rmahipalsingh602-group.gitlab.io/rmahipalsingh602-project/';
+  const gitlabUrl = 'https://mrrathore-tech.vercel.app/';
   const netlifyUrl = 'https://mr-rathore-company-site.netlify.app/';
 
   const normalizePath = (pathname) => pathname.replace(/index\.html$/i, '').replace(/\/+$/, '/') || '/';
@@ -100,30 +100,8 @@
     'mr.rathore tech',
     'mr rathore bhinmal',
     'Mr. Rathore Tech Company',
-    'Mahipal Singh Rathore',
-    'Mahipal Singh Rathore Developer',
-    'Website Specialist Bhinmal Rajasthan',
-    'Junior Frontend Developer',
-    'AI-Focused Web Developer',
-
-    // Local & Commercial Intent (Top Google Search Rankings)
-    'Best Website Developer in Bhinmal Rajasthan',
-    'Website Specialist Bhinmal',
-    'Website Maker Bhinmal',
-    'Web Designer in Jalore Rajasthan',
-    'Affordable Website Development India',
-    'Custom Business Website Design',
-    'WhatsApp Order Website Maker',
-    'Zero Commission WhatsApp Store',
-    '100+ Categories Website Development',
-    'E-Commerce Website Developer India',
-    'Clinic Website Design',
-    'School Coaching Website Maker',
-    'Restaurant Digital Menu Website',
-    'Real Estate Portal Developer',
-    'Freelance Frontend Web Developer Rajasthan',
-    'Direct WhatsApp Conversion Engine',
-    'Lighthouse 100 SEO Developer',
+    'Software Studio Bhinmal Rajasthan',
+    'AI-Focused Software Engineer',
 
     // AI & Machine Learning
     'NETRA AI',
@@ -201,13 +179,13 @@
   };
 
   // 5. METADATA HEAD INJECTION (DYNAMIC REAL-TIME UPDATE)
-  const metaTitle = `Mr. Rathore Tech Company & Mahipal Singh Rathore | AI Platforms, C++ 3D Game Engine & Developer Tools (${currentYear})`;
-  const metaDescription = `Official product home for Mr. Rathore Tech Company & developer portfolio of Mahipal Singh Rathore. Features autonomous AI agents (NETRA AI, RAIN AGI), C++17 Bharatverse 3D Game Engine, CORE-FLOW, OMNI, MRL 3.2.0, WebGL 3D, and trusted Windows desktop downloads. Updated ${currentDateYMD} with today's focus on ${todayTheme.theme}.`;
+  const metaTitle = `Mr. Rathore Tech Company | AI Platforms, C++ 3D Game Engine & Developer Software (${currentYear})`;
+  const metaDescription = `Official product home for Mr. Rathore Tech Company. Features autonomous AI agents (NETRA AI, RAIN AGI), C++17 Bharatverse 3D Game Engine, CORE-FLOW, OMNI, MRL 3.2.0, WebGL 3D, and trusted Windows desktop downloads. Updated ${currentDateYMD} with today's focus on ${todayTheme.theme}.`;
 
   document.title = metaTitle;
   setMeta('description', metaDescription);
   setMeta('keywords', uniqueKeywords);
-  setMeta('author', 'Mahipal Singh Rathore | Mr. Rathore Tech Company');
+  setMeta('author', 'Mr. Rathore Tech Company');
   setMeta('robots', 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1');
   setMeta('googlebot', 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1');
   setMeta('bingbot', 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1');
@@ -247,6 +225,18 @@
 
   // 6. MASTER PRODUCT & SOFTWARE CATALOG FOR STRUCTURED DATA
   const softwareProducts = [
+    {
+      name: "THAR FRONTIER: A SOLDIER'S PROMISE",
+      alternateName: 'Thar Frontier 1971 Longewala Historical Game',
+      type: 'SoftwareApplication',
+      category: 'GameApplication',
+      operatingSystem: 'Windows, Web Browser (WebGL)',
+      version: '1.0.0',
+      description: 'Historical 1971 Longewala battle cinematic 2.5D story adventure with authentic desert assets, visceral 7.62mm SLR combat, 106mm RCL anti-tank gunplay, and deep emotional storytelling.',
+      image: 'assets/thar-battle-scene.png',
+      officialUrl: 'https://thar-fronteir.vercel.app/',
+      url: 'https://thar-fronteir.vercel.app/'
+    },
     {
       name: 'Bharatverse Engine (Ekarshinga)',
       alternateName: 'Ekarshinga C++ 3D Game Engine',
@@ -291,7 +281,7 @@
       operatingSystem: 'Any Web Browser',
       description: 'High-speed AI-powered web platform delivering automated workflows, real-time responsive dashboard UI, and fast interactive APIs.',
       image: 'assets/showcase-shot.jpg',
-      url: canonical + '#mahadev-cv-top'
+      url: canonical + '#ai'
     },
     {
       name: 'CORE-FLOW',
@@ -343,39 +333,19 @@
     }
   ];
 
-  // 7. COMPREHENSIVE FAQ LIST (AI + TECH + GAMING + COMMERCIAL WEB DEV + CAREER)
+  // 7. COMPREHENSIVE FAQ LIST (AI + TECH + GAMING + DESKTOP SOFTWARE)
   const faqItems = [
     [
-      'Who is the best website developer in Bhinmal, Rajasthan?',
-      'Mahipal Singh Rathore (Founder of Mr. Rathore Tech Company) based in Bhinmal, Rajasthan is recognized for high-performance responsive web design, 100+ business category websites, zero-commission WhatsApp conversion engines, local SEO ranking, and autonomous AI integrations.'
-    ],
-    [
-      'How much does a custom business website cost with Mr. Rathore Tech Company?',
-      'Affordable business websites with Mr. Rathore Tech Company typically start from ₹4,999 to ₹15,000 for standard local businesses, retail stores, clinics, restaurants, and coaching centers with direct WhatsApp order flow. Custom web applications and AI-integrated portals are priced based on project specifications.'
-    ],
-    [
-      'How does the Direct WhatsApp Website conversion engine work?',
-      'Instead of forcing visitors to fill out lengthy contact forms or wait for email replies, visitors select their category or product and click a single button that instantly launches WhatsApp with a pre-filled order or inquiry message. This increases lead conversions by up to 300%.'
-    ],
-    [
-      'How fast can a business website be delivered and launched?',
-      'Standard business websites, retail catalogs, clinic portals, school sites, and portfolios are completed and live within 3 to 5 business days with 100/100 Core Web Vitals performance, SSL security, and Google Search Console indexing.'
-    ],
-    [
-      'Who is Mahipal Singh Rathore?',
-      'Mahipal Singh Rathore is a professional Website Specialist, Web Developer, and AI/3D Creative Engineer based in Bhinmal, Rajasthan, India. He builds high-performance responsive web solutions, local AI integrations (NETRA AI, RAIN AGI), C++ 3D game engines (Bharatverse Engine), and desktop productivity tools.'
+      'What does Mr. Rathore Tech Company build?',
+      'Mr. Rathore Tech Company is an independent software studio building autonomous AI platforms, C++17 3D game engines, desktop productivity workspaces, and developer tooling.'
     ],
     [
       'What AI platforms and tools does Mr. Rathore Tech Company develop?',
-      'Mr. Rathore Tech Company builds local AI platforms including NETRA AI (local LLM assistant), RAIN AI / RAIN AGI (reasoning agent system), VYOM (AI-powered dynamic web apps), and NETRAwebAI (AI website builder SaaS concept).'
+      'Mr. Rathore Tech Company builds local AI platforms including NETRA AI (local LLM assistant), RAIN AI / RAIN AGI (reasoning agent system), VYOM (AI-powered dynamic web apps), and experimental developer tools.'
     ],
     [
       'What is Bharatverse Engine (Ekarshinga 3D)?',
       'Bharatverse Engine (Ekarshinga) is a real C++17 Windows desktop 3D game engine and visual world editor. It includes scene systems, entity-component systems (ECS), physics integration, sculpt tools, OBJ export, and OpenGL stable rendering with Vulkan probes.'
-    ],
-    [
-      'What technologies and programming languages does Mahipal Singh Rathore specialize in?',
-      'Mahipal specializes in Python, JavaScript (ES6+), HTML5, CSS3, React, Next.js, FastAPI, SQL (PostgreSQL/SQLite), Three.js, WebGL, GLSL Shaders, C#, C++17, Ollama, AI Agents, Unity, Blender, and responsive web design.'
     ],
     [
       'What is CORE-FLOW and where can I download it?',
@@ -386,10 +356,6 @@
       'MRL 3.2.0 is a multi-runtime language platform with a unified VM, package manager, and cross-platform compilation targets for web, apps, and games. Official downloads and docs are at https://mrl-hi.netlify.app/.'
     ],
     [
-      'How can I hire or contact Mahipal Singh Rathore for website development?',
-      'You can contact Mahipal Singh Rathore directly via WhatsApp or telephone (+91 78629 63112), email at ramhipalsingh602@gmail.com, or view his portfolio at mr-rathore-company-site.netlify.app. He is available for freelance client projects, web redesigns, and AI integrations.'
-    ],
-    [
       'Are the software downloads on this site official and safe?',
       'Yes, all software downloads (Bharatverse Engine, CORE-FLOW, OMNI, MRL 3.2.0) are official builds created and packaged directly by Mr. Rathore Tech Company with direct executable links.'
     ]
@@ -397,7 +363,7 @@
 
   // 8. RICH SCHEMA.ORG JSON-LD GENERATION
 
-  // A. ProfilePage & Person Schema (Google Creator & Developer Authority)
+  // A. ProfilePage & Person Schema
   setSchema('person-schema', {
     '@context': 'https://schema.org',
     '@type': 'ProfilePage',
@@ -405,24 +371,12 @@
     dateModified: currentDateISO,
     mainEntity: {
       '@type': 'Person',
-      name: 'Mahipal Singh Rathore',
-      alternateName: ['Mr. Rathore', 'mr.rathore', 'mr rathore', 'Mr Rathore', 'Mr.Rathore', 'mr.', 'M. S. Rathore'],
-      jobTitle: 'Website Specialist & Web Developer | AI & 3D Creative Engineer',
-      description: 'Versatile and results-oriented Website Specialist and Web Developer with proven expertise in building modern, responsive web solutions, local AI integrations, and real-time 3D web applications.',
-      email: 'ramhipalsingh602@gmail.com',
+      name: 'Mr. Rathore',
+      alternateName: ['mr.rathore', 'mr rathore', 'Mr Rathore', 'Mr.Rathore', 'mr.'],
+      jobTitle: 'Founder & Software Architect',
+      description: 'Software Architect and Developer specializing in autonomous AI platforms, 3D graphics engines, and desktop systems.',
       url: canonical,
       image: absolute('assets/logo-512.png'),
-      address: {
-        '@type': 'PostalAddress',
-        addressLocality: 'Bhinmal',
-        addressRegion: 'Rajasthan',
-        postalCode: '343029',
-        addressCountry: 'IN'
-      },
-      alumniOf: {
-        '@type': 'EducationalOrganization',
-        name: 'Bachelor of Arts (B.A.)'
-      },
       worksFor: {
         '@type': 'Organization',
         name: 'Mr. Rathore Tech Company',
@@ -438,14 +392,10 @@
         'https://pocket-gamer.netlify.app/'
       ],
       knowsAbout: [
-        'Website Development',
-        'Direct WhatsApp Conversion Engines',
-        'Local SEO & Core Web Vitals',
         'Artificial Intelligence',
         'Autonomous AI Agents',
         'Local LLM Systems',
         'Prompt Engineering',
-        'Ollama',
         'Three.js',
         'WebGL',
         'GLSL Shaders',
@@ -455,36 +405,23 @@
         'JavaScript ES6+',
         'React',
         'Next.js',
-        'Tailwind CSS',
-        'PostgreSQL',
-        'SQLite',
-        'Responsive Web Design',
-        'Lighthouse SEO Optimization'
+        'Desktop Software Architecture'
       ]
     }
   });
 
-  // B. Organization, ProfessionalService & LocalBusiness Combined Schema (Top Local & Agency SERP)
+  // B. Organization Schema
   setSchema('organization-schema', {
     '@context': 'https://schema.org',
-    '@type': ['Organization', 'ProfessionalService', 'LocalBusiness'],
+    '@type': 'Organization',
     name: 'Mr. Rathore Tech Company',
-    alternateName: ['Mr. Rathore', 'mr.rathore', 'mr rathore', 'Mr Rathore', 'Mr.Rathore', 'mr.', 'Mr. Rathore Tech', 'Mahipal Singh Rathore Web Solutions'],
+    alternateName: ['Mr. Rathore', 'mr.rathore', 'mr rathore', 'Mr Rathore', 'Mr.Rathore', 'mr.', 'Mr. Rathore Tech'],
     url: canonical,
     logo: absolute('assets/logo-512.png'),
     image: absolute('assets/showcase-shot.jpg'),
-    description: 'Premier Web Design & Development Agency, AI Platforms and Software Studio founded by Mahipal Singh Rathore in Bhinmal, Rajasthan. Specializes in 100+ business category websites, 1-click WhatsApp order flows, local SEO ranking, and autonomous AI agents.',
-    priceRange: '₹₹ (₹4,999 - ₹49,999)',
-    telephone: '+917862963112',
-    email: 'ramhipalsingh602@gmail.com',
-    founder: {
-      '@type': 'Person',
-      name: 'Mahipal Singh Rathore',
-      jobTitle: 'Founder & Lead Developer'
-    },
+    description: 'Autonomous AI Platforms, C++ 3D Game Engine, and Desktop Software Studio.',
     address: {
       '@type': 'PostalAddress',
-      streetAddress: 'Station Road',
       addressLocality: 'Bhinmal',
       addressRegion: 'Rajasthan',
       postalCode: '343029',
@@ -495,59 +432,10 @@
       latitude: 25.0035,
       longitude: 72.2588
     },
-    openingHoursSpecification: [
-      {
-        '@type': 'OpeningHoursSpecification',
-        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
-        opens: '08:00',
-        closes: '22:00'
-      }
-    ],
     areaServed: [
-      { '@type': 'AdministrativeArea', name: 'Bhinmal' },
-      { '@type': 'AdministrativeArea', name: 'Jalore' },
-      { '@type': 'AdministrativeArea', name: 'Rajasthan' },
       { '@type': 'Country', name: 'India' },
       { '@type': 'Place', name: 'Worldwide' }
     ],
-    hasOfferCatalog: {
-      '@type': 'OfferCatalog',
-      name: 'Web Design, AI & Software Development Services',
-      itemListElement: [
-        {
-          '@type': 'Offer',
-          itemOffered: {
-            '@type': 'Service',
-            name: 'Local Business & Retail Website with WhatsApp Order Engine',
-            description: 'Fast, mobile-optimized online catalog with 1-click WhatsApp checkout for retail shops, restaurants, clinics, and salons.'
-          }
-        },
-        {
-          '@type': 'Offer',
-          itemOffered: {
-            '@type': 'Service',
-            name: '100+ Categories Custom Website Development',
-            description: 'High-converting custom web design for schools, coaching, real estate, professional services, gyms, and hotels.'
-          }
-        },
-        {
-          '@type': 'Offer',
-          itemOffered: {
-            '@type': 'Service',
-            name: 'Autonomous AI Chatbot & Agent Integration',
-            description: 'Integration of local LLM assistants, 24/7 automated lead handling, and intelligent API workflows into websites.'
-          }
-        },
-        {
-          '@type': 'Offer',
-          itemOffered: {
-            '@type': 'Service',
-            name: 'Core Web Vitals & 100/100 Lighthouse SEO Acceleration',
-            description: 'Full technical SEO, Schema markup, sitemap synchronization, and sub-second page load optimization for top Google ranking.'
-          }
-        }
-      ]
-    },
     knowsAbout: [
       'Website Design & Development',
       'Direct WhatsApp Ordering Systems',
@@ -670,8 +558,8 @@
       {
         '@type': 'ListItem',
         position: 2,
-        name: '3D CV & Developer Portfolio',
-        item: canonical + '#mahadev-cv-top'
+        name: 'Product Portfolio',
+        item: canonical + '#products'
       },
       {
         '@type': 'ListItem',

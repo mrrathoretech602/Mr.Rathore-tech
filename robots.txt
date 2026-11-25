@@ -1,5 +1,5 @@
 # ==============================================================================
-# ROBOTS.TXT FOR MR. RATHORE TECH COMPANY & MAHIPAL SINGH RATHORE PORTFOLIO
+# ROBOTS.TXT FOR MR. RATHORE TECH COMPANY
 # Optimized for Google, Bing, Perplexity AI, ChatGPT, Gemini, Applebot & Social
 # ==============================================================================
 
@@ -55,5 +55,4 @@ Allow: /
 
 # Official XML Sitemaps
 Sitemap: https://mrrathore-tech.vercel.app/sitemap.xml
-Sitemap: https://rmahipalsingh602-group.gitlab.io/rmahipalsingh602-project/sitemap.xml
 Sitemap: https://mr-rathore-company-site.netlify.app/sitemap.xml

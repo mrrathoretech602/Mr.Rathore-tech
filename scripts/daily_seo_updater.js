@@ -1,7 +1,7 @@
 /**
  * ==============================================================================
  * DAILY AUTOMATIC SEO STRENGTHENER & SITEMAP SYNCHRONIZER
- * Entity: Mahipal Singh Rathore | Mr. Rathore Tech Company
+ * Entity: Mr. Rathore Tech Company
  * Domains: AI · Tech · Gaming · Web Development
  * ==============================================================================
  */
