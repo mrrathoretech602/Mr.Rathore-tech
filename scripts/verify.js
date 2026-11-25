@@ -2,34 +2,36 @@ const fs = require('fs');
 const html = fs.readFileSync('index.html', 'utf8');
 
 const mustBePresent = [
-  'assets/vendor/three.min.js',
-  'assets/vendor/gsap.min.js',
-  'id="cute-cursor-container"',
-  'Mr. Rathore Tech Company',
-  'NETRA AI',
-  'RAIN AI',
-  'CORE-FLOW',
-  'MRL 3.2',
-  'Ekarshinga',
-  'seo-engine.js'
+  'Mr. Rathore Tech',
+  'EKASHRINGA 3D Engine',
+  'Mahipal Singh Rathore',
+  'Founder &amp; Principal Engineer',
+  'rathoretecnology@gmail.com',
+  'https://github.com/mrrathoretech602',
+  'https://www.youtube.com/@Mr.Rathore-q4o',
+  'https://www.linkedin.com/in/mr-rathore-759236388/',
+  'id="organization-schema"',
+  'seo-engine.js',
+  'id="contact-form"',
+  '&copy; 2026 Mr. Rathore Tech. All rights reserved.'
 ];
 
 const mustBeAbsent = [
-  'mahadev-cv.css',
-  'mahadev-cv.js',
-  'id="mahadev-cv-top"',
-  'id="cv-printable-modal"',
-  'ramhipalsingh602@gmail.com',
-  'id="website-pricing-engine"',
-  'id="conversion-engine"',
-  'id="wa-floating-container"',
-  'Transparent Website Pricing Packages',
-  'Build Your High-Converting Website'
+  'cute-cursor-container',
+  'cute-animal-switcher',
+  '100+ categories',
+  '100+ languages',
+  'Hire me',
+  'I am a developer',
+  'My skills',
+  'Lorem ipsum',
+  'three.min.js',
+  'gsap.min.js'
 ];
 
 let allPassed = true;
 
-console.log('--- Checking Required Elements ---');
+console.log('--- Checking Required Enterprise Elements ---');
 for (const item of mustBePresent) {
   if (html.includes(item)) {
     console.log('✓ Found required:', item);
@@ -39,20 +41,18 @@ for (const item of mustBePresent) {
   }
 }
 
-console.log('\n--- Checking Clean Removal of Personal Info, CV & Pricing ---');
+console.log('\n--- Checking Removal of Legacy / Hype / Dead Elements ---');
 for (const item of mustBeAbsent) {
   if (!html.includes(item)) {
-    console.log('✓ Cleanly removed (absent):', item);
+    console.log('✓ Cleanly absent:', item);
   } else {
-    console.error('✗ Leaked element still present:', item);
+    console.error('✗ Legacy/hype element still present:', item);
     allPassed = false;
   }
 }
 
 if (allPassed) {
-  console.log('\n=============================================');
-  console.log('ALL VERIFICATION CHECKS PASSED PERFECTLY!');
-  console.log('=============================================');
+  console.log('\nALL VERIFICATION CHECKS PASSED!');
 } else {
   process.exit(1);
 }

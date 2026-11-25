@@ -1,12 +1,12 @@
 {
-  "name": "Mr. Rathore Tech Company",
+  "name": "Mr. Rathore Tech",
   "short_name": "MrRathore",
-  "description": "Official product home for AI apps, desktop software, developer tools, and downloads.",
+  "description": "Deep-tech software company engineering C++ 3D game engines, offline-first local AI platforms, and custom interactive 3D web systems.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
-  "background_color": "#f4f5f1",
-  "theme_color": "#0b1016",
+  "background_color": "#09090B",
+  "theme_color": "#09090B",
   "icons": [
     {
       "src": "assets/logo-192.png",

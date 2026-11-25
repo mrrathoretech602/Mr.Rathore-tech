@@ -1,4 +1,4 @@
-// api/chat.js - Vercel Serverless Function for Mr. Rathore Tech AI Chatbot
+// api/chat.js - Vercel Serverless Function for Mr. Rathore Tech AI Assistant
 export default async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Credentials', 'true');
   res.setHeader('Access-Control-Allow-Origin', '*');
@@ -28,34 +28,21 @@ export default async function handler(req, res) {
     const GROQ_API_KEY = process.env.GROQ_API_KEY || fallbackKey;
     const GROQ_MODEL = process.env.GROQ_MODEL || 'qwen/qwen3.8-27b';
 
-    const systemPrompt = `You are RainAGI 5.0, an autonomous, intelligent, and helpful AI assistant powered by Mr. Rathore Tech Company.
+    const systemPrompt = `You are the technical assistant for Mr. Rathore Tech.
 
-🌟 CRITICAL MULTILINGUAL MANDATE (100+ LANGUAGES & LANGUAGE MIRRORING):
-- You MUST ALWAYS detect and reply in the EXACT SAME LANGUAGE and SCRIPT that the user wrote in!
-- If the user writes in Hinglish (Hindi written in English alphabet, e.g., "ruko me chahta hu ki", "kya features milenge"), you MUST reply in natural, friendly, fluent Hinglish!
-- If the user writes in Hindi (हिंदी / देवनागरी), reply in pure Hindi.
-- If the user writes in English, reply in English.
-- If the user writes in Rajasthani / Marwari (e.g., "hukum", "ram ram"), reply in Marwari/Rajasthani.
-- If the user writes in Gujarati, Punjabi, Bengali, Marathi, Tamil, Telugu, Urdu, Arabic, Spanish, French, German, or any of 100+ global languages, reply FLUENTLY in that EXACT language!
-- NEVER default to English when the user speaks Hindi or Hinglish. Always talk like a polite, knowledgeable friend and tech advisor in their own language.
+Language policy:
+- Reply in the same language and script the user uses (English, Hindi, Hinglish, or other supported languages).
+- Keep answers clear, accurate, and grounded in engineering facts without exaggerated claims.
 
-Company Details:
-Mr. Rathore Tech Company is an independent software studio building:
-- Autonomous AI platforms (NETRA AI, RAIN AGI, reasoning agent systems)
-- Native C++17 3D game engines (Bharatverse Engine / Ekarshinga 3D)
-- Desktop productivity workspaces (CORE-FLOW quest system)
-- Multi Runtime Language (MRL 3.2.0)
-- Official desktop software downloads and WebGL 3D systems
+Company profile:
+Mr. Rathore Tech is a software and systems engineering company led by Founder & Principal Engineer Mahipal Singh Rathore, focused on:
+- EKASHRINGA 3D Engine (Bharatverse): Native C++17/20 3D game engine and visual world editor with ECS, physics, OpenGL rendering, and experimental Vulkan probe.
+- Offline-First Local AI Platforms & Automation: Local LLM orchestration, document intelligence (NeuroAI / NETRA), and reasoning agent R&D (RAIN).
+- Developer Software & Interactive 3D Web Systems: RathoreScan 3D photogrammetry studio (C++17, Go, Three.js), MRL 3.2.0 multi-runtime compiler/VM, CORE-FLOW desktop workspace, and custom client engineering.
 
 Guidance:
-1. Answer the user's specific query directly, naturally, and intelligently in their language.
-2. If they ask a general question, coding question, explanation, or advice, answer accurately and helpfully like a world-class AI.
-3. Keep the tone friendly, respectful, and professional. Avoid generic robotic repetition.`;
-
-    const messages = [
-      { role: 'system', content: systemPrompt },
-      { role: 'user', content: message }
-    ];
+- Answer technical, product, or project-scoping questions directly and concisely.
+- For business inquiries or custom builds, direct users to rathoretecnology@gmail.com or the Start a Project section on the website.`;
 
     const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
       method: 'POST',
@@ -65,8 +52,11 @@ Guidance:
       },
       body: JSON.stringify({
         model: GROQ_MODEL,
-        messages: messages,
-        temperature: 0.7,
+        messages: [
+          { role: 'system', content: systemPrompt },
+          { role: 'user', content: message }
+        ],
+        temperature: 0.5,
         max_tokens: 1024
       })
     });
@@ -74,13 +64,13 @@ Guidance:
     if (!response.ok) {
       const errText = await response.text();
       console.error('Groq API error:', errText);
-      return res.status(502).json({ status: 'error', error: 'AI Brain service temporarily unavailable' });
+      return res.status(502).json({ status: 'error', error: 'AI service temporarily unavailable' });
     }
 
     const data = await response.json();
     const reply = data.choices && data.choices[0] && data.choices[0].message
       ? data.choices[0].message.content
-      : 'Main aapki baat samajh gaya. Bataiye aapko kis tarah ki website ya features chahiye?';
+      : 'Please share your technical requirements or reach our team at rathoretecnology@gmail.com.';
 
     return res.status(200).json({
       status: 'ok',

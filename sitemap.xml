@@ -1,79 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
-        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
-  <!-- 1. Main Official Portal (Vercel Production - Mr. Rathore Official) -->
   <url>
     <loc>https://mrrathore-tech.vercel.app/</loc>
-    <lastmod>2026-11-18</lastmod>
-    <changefreq>always</changefreq>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://mrrathore-tech.vercel.app/assets/showcase-shot.jpg</image:loc>
-      <image:title>Mr. Rathore (Mr.Rathore) Official Website &amp; Tech Company</image:title>
-      <image:caption>Official platform for Mr. Rathore Tech Company. AI platforms (NETRA AI, RAIN AGI), C++ 3D Game Engine (Bharatverse/Ekarshinga), and software tools.</image:caption>
+      <image:loc>https://mrrathore-tech.vercel.app/assets/ekarshinga-hero.png</image:loc>
+      <image:title>Mr. Rathore Tech — EKASHRINGA C++ 3D Engine &amp; Local AI Systems</image:title>
+      <image:caption>Deep-tech software studio engineering C++ 3D game engines, offline-first local AI platforms, and custom interactive 3D web systems.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://mrrathore-tech.vercel.app/assets/logo-192.png</image:loc>
-      <image:title>Mr. Rathore Tech Logo</image:title>
+      <image:title>Mr. Rathore Tech Emblem</image:title>
     </image:image>
   </url>
 
-
-  <!-- 2. Main Official Netlify Architecture -->
   <url>
     <loc>https://mr-rathore-company-site.netlify.app/</loc>
-    <lastmod>2026-11-18</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
-    <image:image>
-      <image:loc>https://mr-rathore-company-site.netlify.app/assets/showcase-shot.jpg</image:loc>
-      <image:title>Mr. Rathore Tech Company Official Software &amp; Platform</image:title>
-    </image:image>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
 
-  <!-- 3. Ekarshinga C++ 3D Game Engine Flagship Portal -->
   <url>
     <loc>https://ekarshinga-engine.netlify.app/</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
-  <!-- 4. THAR FRONTIER: A Soldier's Promise · 1971 Game Portal -->
+  <url>
+    <loc>https://rathorescan3d.vercel.app/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
   <url>
     <loc>https://thar-fronteir.vercel.app/</loc>
-    <lastmod>2026-11-18</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.95</priority>
-    <image:image>
-      <image:loc>https://mrrathore-tech.vercel.app/assets/thar-battle-scene.png</image:loc>
-      <image:title>THAR FRONTIER: A Soldier's Promise (1971)</image:title>
-      <image:caption>Cinematic 2.5D historical action adventure set during the Battle of Longewala, 1971.</image:caption>
-    </image:image>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
   </url>
 
-  <!-- 4. CORE-FLOW Official Workspace & Documentation -->
   <url>
     <loc>https://core-flow-website-offi.netlify.app/</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.85</priority>
   </url>
 
-  <!-- 5. MRL 3.2.0 Multi Runtime Language & Compiler Documentation -->
   <url>
     <loc>https://mrl-hi.netlify.app/</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.85</priority>
   </url>
 
-  <!-- 6. Pocket Gamer Mobile Gaming Web Property -->
   <url>
     <loc>https://pocket-gamer.netlify.app/</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
