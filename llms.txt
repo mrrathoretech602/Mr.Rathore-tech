@@ -16,7 +16,7 @@
 
 ## Flagship Products
 - [EKASHRINGA 3D Engine](https://ekarshinga-engine.netlify.app/): Native C++ desktop 3D game engine and world editor.
-- [RathoreScan 3D Studio](https://rathorescan3d.vercel.app/): Self-hosted 360-degree video-to-3D photogrammetry pipeline (C++17, Go, Three.js).
+- [RathoreScan 3D](https://rathorescan3d.vercel.app/): Local-first 3D scanning and mesh optimization studio for mobile, tablet, and PC workflows with 3-stage pipeline, shading modes, and High-Poly to Low-Poly optimizer.
 - [MRL 3.2.0 Runtime](https://mrl-hi.netlify.app/): Multi-runtime language compiler and bytecode VM.
 - [CORE-FLOW Workspace](https://core-flow-website-offi.netlify.app/): Windows desktop execution and deep-work workspace.
 - [Thar Frontier (1971)](https://thar-fronteir.vercel.app/): 2.5D WebGL and Windows tactical adventure.

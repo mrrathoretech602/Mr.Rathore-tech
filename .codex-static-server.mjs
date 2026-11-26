@@ -16,6 +16,7 @@ const types = {
   '.png': 'image/png',
   '.jpg': 'image/jpeg',
   '.jpeg': 'image/jpeg',
+  '.mp4': 'video/mp4',
   '.ico': 'image/x-icon',
   '.zip': 'application/zip',
   '.exe': 'application/octet-stream'

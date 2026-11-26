@@ -100,7 +100,7 @@
     "name": "Mr. Rathore Tech Flagship Platforms & Software",
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "EKASHRINGA 3D Engine (Bharatverse)", "url": "https://ekarshinga-engine.netlify.app/" },
-      { "@type": "ListItem", "position": 2, "name": "RathoreScan 3D Studio", "url": "https://rathorescan3d.vercel.app/" },
+      { "@type": "ListItem", "position": 2, "name": "RathoreScan 3D", "url": "https://rathorescan3d.vercel.app/" },
       { "@type": "ListItem", "position": 3, "name": "Local AI Suite (NETRA & NeuroAI)", "url": "https://mrrathore-tech.vercel.app/#products" },
       { "@type": "ListItem", "position": 4, "name": "MRL 3.2.0 Runtime", "url": "https://mrl-hi.netlify.app/" },
       { "@type": "ListItem", "position": 5, "name": "CORE-FLOW Workspace", "url": "https://core-flow-website-offi.netlify.app/" },
@@ -715,10 +715,28 @@
       pointer-events: auto;
     }
 
-    .showcase-panel img {
+    .showcase-panel img,
+    .showcase-panel video {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      display: block;
+    }
+
+    .showcase-panel video {
+      object-fit: contain;
+      background: #060709;
+    }
+
+    .showcase-video-controls {
+      position: absolute;
+      right: 16px;
+      bottom: 18px;
+      z-index: 3;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      pointer-events: auto;
     }
 
     .holo-canvas {
@@ -876,8 +894,189 @@
       grid-column: span 6;
     }
 
+    .bento-card.is-featured {
+      grid-column: span 12;
+      display: grid;
+      grid-template-columns: 1.25fr 1fr;
+      align-items: stretch;
+    }
+
+    .bento-card.is-featured:hover {
+      transform: translateY(-2px);
+    }
+
     .bento-card.is-hidden {
       display: none;
+    }
+
+    /* Studio Video Frame (macOS / Local Studio Style) */
+    .studio-frame {
+      display: flex;
+      flex-direction: column;
+      background: #080A0F;
+      border-right: 1px solid var(--border-subtle);
+      height: 100%;
+    }
+
+    .studio-frame-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 10px 14px;
+      background: #0D0F15;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .studio-frame-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      min-width: 0;
+    }
+
+    .studio-frame-dots {
+      display: inline-flex;
+      gap: 6px;
+      flex-shrink: 0;
+    }
+
+    .studio-frame-dots span {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.16);
+    }
+
+    .studio-frame-dots span:nth-child(1) { background: rgba(248, 113, 113, 0.72); }
+    .studio-frame-dots span:nth-child(2) { background: rgba(251, 191, 36, 0.72); }
+    .studio-frame-dots span:nth-child(3) { background: rgba(52, 211, 153, 0.72); }
+
+    .studio-frame-title {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      color: var(--text-secondary);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .studio-frame-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 3px 9px;
+      border-radius: 999px;
+      background: rgba(16, 185, 129, 0.12);
+      border: 1px solid rgba(16, 185, 129, 0.28);
+      font-family: var(--font-mono);
+      font-size: 10px;
+      font-weight: 500;
+      color: #34D399;
+      flex-shrink: 0;
+    }
+
+    .studio-frame-badge::before {
+      content: "";
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #10B981;
+      box-shadow: 0 0 8px rgba(16, 185, 129, 0.75);
+    }
+
+    .studio-video-stage {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      background: #060709;
+      overflow: hidden;
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .studio-video-stage video {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+      background: #060709;
+    }
+
+    .studio-video-controls {
+      position: absolute;
+      left: 12px;
+      right: 12px;
+      bottom: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      pointer-events: none;
+    }
+
+    .video-ctrl-btn {
+      pointer-events: auto;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 12px;
+      border-radius: 8px;
+      background: rgba(9, 9, 11, 0.84);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      color: var(--text-primary);
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: border-color var(--transition), background-color var(--transition), transform var(--transition);
+    }
+
+    .video-ctrl-btn:hover {
+      border-color: var(--accent-cyan);
+      background: rgba(9, 9, 11, 0.96);
+      transform: translateY(-1px);
+    }
+
+    .video-ctrl-btn svg {
+      width: 13px;
+      height: 13px;
+      flex-shrink: 0;
+    }
+
+    .scan3d-features {
+      display: grid;
+      gap: 8px;
+      margin: 0 0 16px;
+      padding: 0;
+      list-style: none;
+    }
+
+    .scan3d-features li {
+      position: relative;
+      padding-left: 14px;
+      font-size: 13px;
+      line-height: 1.5;
+      color: var(--text-secondary);
+    }
+
+    .scan3d-features li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 8px;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--accent-cyan);
+    }
+
+    .scan3d-features strong {
+      color: var(--text-primary);
+      font-weight: 600;
     }
 
     .bento-media {
@@ -1750,10 +1949,17 @@
       justify-content: center;
     }
 
-    .lightbox-viewport img {
+    .lightbox-viewport img,
+    .lightbox-viewport video {
       max-height: 75vh;
       width: 100%;
       object-fit: contain;
+      background: #050507;
+      outline: none;
+    }
+
+    .lightbox-viewport [hidden] {
+      display: none !important;
     }
 
     .lightbox-caption {
@@ -1778,8 +1984,16 @@
       .bento-card {
         grid-column: span 6;
       }
-      .bento-card.is-wide {
+      .bento-card.is-wide,
+      .bento-card.is-featured {
         grid-column: span 12;
+      }
+      .bento-card.is-featured {
+        grid-template-columns: 1fr;
+      }
+      .studio-frame {
+        border-right: none;
+        border-bottom: 1px solid var(--border-subtle);
       }
       .pillars-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -1858,7 +2072,8 @@
       }
       .bento-card,
       .bento-card.is-wide,
-      .bento-card.is-half {
+      .bento-card.is-half,
+      .bento-card.is-featured {
         grid-column: span 12;
       }
       .pillars-grid,
@@ -1892,6 +2107,13 @@
     </symbol>
     <symbol id="icon-zoom" viewBox="0 0 24 24">
       <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+    </symbol>
+    <symbol id="icon-play" viewBox="0 0 24 24">
+      <polygon fill="currentColor" points="6 4 20 12 6 20 6 4" />
+    </symbol>
+    <symbol id="icon-pause" viewBox="0 0 24 24">
+      <rect fill="currentColor" x="6" y="4" width="4" height="16" rx="1" />
+      <rect fill="currentColor" x="14" y="4" width="4" height="16" rx="1" />
     </symbol>
     <symbol id="icon-close" viewBox="0 0 24 24">
       <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M18 6L6 18M6 6l12 12" />
@@ -1945,6 +2167,7 @@
 
       <div class="nav-links" id="primary-links">
         <a class="nav-item" href="#products">Products</a>
+        <a class="nav-item" href="#rathorescan3d">RathoreScan 3D</a>
         <a class="nav-item" href="#solutions">Solutions</a>
         <a class="nav-item" href="#architecture">Architecture</a>
         <a class="nav-item" href="#about">About</a>
@@ -1997,7 +2220,7 @@
           </div>
           <div class="hero-metric">
             <strong>RathoreScan 3D</strong>
-            <span>C++17 + Go Photogrammetry</span>
+            <span>Local-First 3D Scan Studio</span>
           </div>
           <div class="hero-metric">
             <strong>MRL 3.2.0 VM</strong>
@@ -2054,11 +2277,21 @@
           </div>
 
           <div class="showcase-panel" data-panel="scan3d">
-            <img src="assets/rathorescan3d-shot.jpg" alt="RathoreScan 3D video-to-3D photogrammetry studio interface" loading="lazy" />
+            <video id="showcase-scan3d-video" src="assets/video/rathorescan3d-demo.mp4" poster="assets/rathorescan3d-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="RathoreScan 3D local studio demo showing 3D mesh inspection, shading modes, and polygon optimization"></video>
+            <div class="showcase-video-controls">
+              <button class="video-ctrl-btn" type="button" id="showcase-scan3d-toggle" data-video-toggle="showcase-scan3d-video" aria-label="Pause RathoreScan 3D demo video" aria-pressed="true">
+                <svg aria-hidden="true"><use href="#icon-pause"></use></svg>
+                <span>Pause</span>
+              </button>
+              <button class="video-ctrl-btn" type="button" data-lightbox-video="assets/video/rathorescan3d-demo.mp4" data-poster="assets/rathorescan3d-poster.jpg" data-title="RathoreScan 3D — Local Laptop Studio Demo" data-desc="3-Stage Pipeline (Capture → Build Engine → 3D Studio &amp; Export), .OBJ mesh inspection, Shading Modes (Textured, Clay, Wire, Normals), and High-Poly to Low-Poly optimization.">
+                <svg aria-hidden="true"><use href="#icon-zoom"></use></svg>
+                <span>Watch Full Demo</span>
+              </button>
+            </div>
             <div class="showcase-overlay">
               <div class="showcase-overlay-copy">
-                <strong>RathoreScan 3D Photogrammetry Studio</strong>
-                <p>Self-hosted 360-degree video-to-3D reconstruction pipeline powered by C++17 (COLMAP + OpenMVS), Go workers, and a Three.js PWA exporter.</p>
+                <strong>RathoreScan 3D — Local Laptop Studio</strong>
+                <p>3-Stage Pipeline (Capture → Build Engine → 3D Studio &amp; Export) with real-time .OBJ inspection, Shading Modes, Ground Pivot, and High-Poly to Low-Poly optimization.</p>
               </div>
             </div>
           </div>
@@ -2133,6 +2366,68 @@
       </div>
 
       <div class="bento-grid">
+        <!-- Featured Showcase: RathoreScan 3D -->
+        <article class="bento-card is-featured" id="rathorescan3d" data-tags="engine devtools">
+          <div class="studio-frame">
+            <div class="studio-frame-bar">
+              <div class="studio-frame-left">
+                <div class="studio-frame-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+                <span class="studio-frame-title">RathoreScan 3D — Local Laptop Studio</span>
+              </div>
+              <span class="studio-frame-badge">Live Demo • Local Studio</span>
+            </div>
+            <div class="studio-video-stage">
+              <video id="bento-scan3d-video" src="assets/video/rathorescan3d-demo.mp4" poster="assets/rathorescan3d-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="RathoreScan 3D screen-recorded demo showing 3-stage pipeline, 3D mesh inspector, shading modes, and High-Poly to Low-Poly optimizer"></video>
+              <div class="studio-video-controls">
+                <button class="video-ctrl-btn" type="button" id="bento-scan3d-toggle" data-video-toggle="bento-scan3d-video" aria-label="Pause RathoreScan 3D demo video" aria-pressed="true">
+                  <svg aria-hidden="true"><use href="#icon-pause"></use></svg>
+                  <span>Pause</span>
+                </button>
+                <button class="video-ctrl-btn" type="button" data-lightbox-video="assets/video/rathorescan3d-demo.mp4" data-poster="assets/rathorescan3d-poster.jpg" data-title="RathoreScan 3D — Local Laptop Studio Demo" data-desc="3-Stage Pipeline (Capture → Build Engine → 3D Studio &amp; Export), Real-Time 3D Studio Inspector (.OBJ loading, Shading Modes, Orientation &amp; Ground Pivot), and High-Poly to Low-Poly Optimizer.">
+                  <svg aria-hidden="true"><use href="#icon-zoom"></use></svg>
+                  <span>Expand / Watch Full Demo</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="bento-body">
+            <div class="bento-top">
+              <h3>RathoreScan 3D</h3>
+              <span class="status-pill is-active">Live Demo • Local Studio</span>
+            </div>
+            <p class="bento-desc">
+              Local-first 3D scanning &amp; mesh optimization studio built for mobile, tablet, and PC workflows—turning real-world captures into game-ready 3D assets directly on your own hardware.
+            </p>
+            <ul class="scan3d-features">
+              <li><strong>3-Stage Pipeline:</strong> Capture → Build Engine → 3D Studio &amp; Export</li>
+              <li><strong>Real-Time 3D Studio Inspector:</strong> .OBJ mesh loading, Shading Modes (Textured, Clay, Wire, Normals), Orientation/Scale &amp; Ground Pivot controls</li>
+              <li><strong>High-Poly to Low-Poly Optimizer:</strong> One-click polygon reduction (Low / Med / Reset) for Unity, Unreal Engine, and custom 3D engines</li>
+              <li><strong>Local Laptop Studio:</strong> Runs locally on user hardware without paid cloud lock-in</li>
+            </ul>
+            <div class="tech-pills">
+              <span class="tech-pill">3D Pipeline</span>
+              <span class="tech-pill">Mesh Optimizer</span>
+              <span class="tech-pill">OBJ Export</span>
+              <span class="tech-pill">Offline-First</span>
+            </div>
+            <div class="bento-actions">
+              <button class="btn btn-primary btn-sm" type="button" data-lightbox-video="assets/video/rathorescan3d-demo.mp4" data-poster="assets/rathorescan3d-poster.jpg" data-title="RathoreScan 3D — Local Laptop Studio Demo" data-desc="3-Stage Pipeline (Capture → Build Engine → 3D Studio &amp; Export), Real-Time 3D Studio Inspector (.OBJ loading, Shading Modes, Ground Pivot), and High-Poly to Low-Poly Optimizer.">
+                <svg aria-hidden="true"><use href="#icon-play"></use></svg>
+                <span>Watch Full Demo</span>
+              </button>
+              <a class="btn btn-secondary btn-sm" href="https://rathorescan3d.vercel.app/" target="_blank" rel="noopener noreferrer">
+                <svg aria-hidden="true"><use href="#icon-external"></use></svg>
+                <span>Open Studio</span>
+              </a>
+              <a class="btn btn-ghost btn-sm" href="https://github.com/mrrathoretech602/RathoreScan3D" target="_blank" rel="noopener noreferrer">
+                <svg aria-hidden="true"><use href="#icon-github"></use></svg>
+                <span>GitHub</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
         <!-- Featured Wide Card: EKASHRINGA 3D Engine -->
         <article class="bento-card is-wide" data-tags="engine desktop">
           <div class="bento-media">
@@ -2200,42 +2495,8 @@
           </div>
         </article>
 
-        <!-- RathoreScan 3D -->
-        <article class="bento-card" data-tags="engine devtools">
-          <div class="bento-media">
-            <img src="assets/rathorescan3d-shot.jpg" alt="RathoreScan 3D photogrammetry mesh reconstruction workspace" loading="lazy" />
-            <button class="zoom-trigger" type="button" aria-label="Zoom RathoreScan 3D screenshot" data-lightbox="assets/rathorescan3d-shot.jpg" data-title="RathoreScan 3D Studio" data-desc="Self-hosted 360-degree video-to-3D photogrammetry studio built with C++17 (COLMAP + OpenMVS), Go, and Three.js PWA.">
-              <svg aria-hidden="true"><use href="#icon-zoom"></use></svg>
-            </button>
-          </div>
-          <div class="bento-body">
-            <div class="bento-top">
-              <h3>RathoreScan 3D Studio</h3>
-              <span class="status-pill is-active">Active</span>
-            </div>
-            <p class="bento-desc">
-              Self-hosted 360-degree video-to-3D photogrammetry pipeline engineered to reconstruct and export textured meshes for Unity, Unreal Engine 5, and EKASHRINGA.
-            </p>
-            <div class="tech-pills">
-              <span class="tech-pill">C++17</span>
-              <span class="tech-pill">Go</span>
-              <span class="tech-pill">Three.js PWA</span>
-            </div>
-            <div class="bento-actions">
-              <a class="btn btn-primary btn-sm" href="https://rathorescan3d.vercel.app/" target="_blank" rel="noopener noreferrer">
-                <svg aria-hidden="true"><use href="#icon-external"></use></svg>
-                <span>Open Studio</span>
-              </a>
-              <a class="btn btn-secondary btn-sm" href="https://github.com/mrrathoretech602/RathoreScan3D" target="_blank" rel="noopener noreferrer">
-                <svg aria-hidden="true"><use href="#icon-github"></use></svg>
-                <span>GitHub</span>
-              </a>
-            </div>
-          </div>
-        </article>
-
         <!-- MRL 3.2.0 -->
-        <article class="bento-card" data-tags="devtools desktop">
+        <article class="bento-card is-half" data-tags="devtools desktop">
           <div class="bento-media">
             <img src="assets/mrl-shot.jpg" alt="MRL 3.2.0 compiler IDE and bytecode VM terminal" loading="lazy" />
             <button class="zoom-trigger" type="button" aria-label="Zoom MRL 3.2.0 screenshot" data-lightbox="assets/mrl-shot.jpg" data-title="MRL 3.2.0 Multi-Runtime Language" data-desc="Multi-runtime bytecode VM, package resolver, and cross-platform CLI toolchain for desktop, web, and automation targets.">
@@ -2267,7 +2528,7 @@
         </article>
 
         <!-- CORE-FLOW -->
-        <article class="bento-card" data-tags="desktop">
+        <article class="bento-card is-half" data-tags="desktop">
           <div class="bento-media">
             <img src="assets/coreflow-shot.jpg" alt="CORE-FLOW Windows desktop productivity workspace" loading="lazy" />
             <button class="zoom-trigger" type="button" aria-label="Zoom CORE-FLOW screenshot" data-lightbox="assets/coreflow-shot.jpg" data-title="CORE-FLOW v1.0.0 Desktop Workspace" data-desc="Structured Windows desktop productivity workspace with local-first state storage, focus sessions, and execution tracking.">
@@ -2732,7 +2993,8 @@
           <h4>Products</h4>
           <ul>
             <li><a href="https://ekarshinga-engine.netlify.app/" target="_blank" rel="noopener noreferrer">EKASHRINGA 3D Engine</a></li>
-            <li><a href="https://rathorescan3d.vercel.app/" target="_blank" rel="noopener noreferrer">RathoreScan 3D</a></li>
+            <li><a href="#rathorescan3d">RathoreScan 3D Demo</a></li>
+            <li><a href="https://rathorescan3d.vercel.app/" target="_blank" rel="noopener noreferrer">RathoreScan 3D Studio</a></li>
             <li><a href="https://mrl-hi.netlify.app/" target="_blank" rel="noopener noreferrer">MRL 3.2.0 Runtime</a></li>
             <li><a href="https://core-flow-website-offi.netlify.app/" target="_blank" rel="noopener noreferrer">CORE-FLOW Workspace</a></li>
             <li><a href="#downloads">Release Binaries</a></li>
@@ -2778,7 +3040,7 @@
   </footer>
 
   <!-- Lightbox Modal -->
-  <div class="lightbox-modal" id="media-lightbox" aria-hidden="true" role="dialog" aria-label="Product screenshot preview">
+  <div class="lightbox-modal" id="media-lightbox" aria-hidden="true" role="dialog" aria-label="Product media preview">
     <div class="lightbox-backdrop" id="lightbox-backdrop"></div>
     <div class="lightbox-content">
       <button class="lightbox-close" type="button" id="lightbox-close" aria-label="Close preview">
@@ -2786,6 +3048,7 @@
       </button>
       <div class="lightbox-viewport">
         <img id="lightbox-img" src="assets/ekarshinga-hero.png" alt="Expanded product preview" />
+        <video id="lightbox-video" controls playsinline preload="metadata" poster="assets/rathorescan3d-poster.jpg" hidden></video>
       </div>
       <div class="lightbox-caption">
         <strong id="lightbox-title">EKASHRINGA 3D Engine</strong>
@@ -2877,10 +3140,12 @@
           desc: 'Real-time particle and volumetric shader systems alongside procedural heightfield geometry.'
         },
         scan3d: {
-          addr: 'rathorescan3d.vercel.app / photogrammetry-studio',
-          src: 'assets/rathorescan3d-shot.jpg',
-          title: 'RathoreScan 3D Studio',
-          desc: 'Self-hosted 360-degree video-to-3D photogrammetry pipeline built with C++17, Go, and Three.js.'
+          addr: 'rathorescan3d.vercel.app / local-3d-studio',
+          src: 'assets/rathorescan3d-poster.jpg',
+          video: 'assets/video/rathorescan3d-demo.mp4',
+          poster: 'assets/rathorescan3d-poster.jpg',
+          title: 'RathoreScan 3D — Local Laptop Studio Demo',
+          desc: 'Local-first 3D scanning & mesh optimization studio with 3-Stage Pipeline, Shading Modes (Textured, Clay, Wire, Normals), and High-Poly to Low-Poly Optimizer.'
         },
         neuroai: {
           addr: 'mr-rathore.tech / local-ai-workspace',
@@ -3070,6 +3335,12 @@
           }
           if (key === 'holo') startHolo();
           else stopHolo();
+
+          const scanVideo = document.getElementById('showcase-scan3d-video');
+          if (scanVideo) {
+            if (key === 'scan3d') scanVideo.play().catch(() => {});
+            else scanVideo.pause();
+          }
         });
       });
 
@@ -3088,17 +3359,37 @@
         });
       });
 
-      // 4. Lightbox Modal
+      // 4. Lightbox Modal & Video Controls
       const lightbox = document.getElementById('media-lightbox');
       const lightboxImg = document.getElementById('lightbox-img');
+      const lightboxVideo = document.getElementById('lightbox-video');
       const lightboxTitle = document.getElementById('lightbox-title');
       const lightboxDesc = document.getElementById('lightbox-desc');
       const lightboxClose = document.getElementById('lightbox-close');
       const lightboxBackdrop = document.getElementById('lightbox-backdrop');
 
-      const openLightbox = (src, title, desc) => {
+      const openLightbox = (src, title, desc, options = {}) => {
         if (!lightbox || !lightboxImg) return;
-        lightboxImg.src = src;
+        const { isVideo = false, poster = '' } = options;
+
+        if (isVideo && lightboxVideo) {
+          lightboxImg.hidden = true;
+          lightboxVideo.hidden = false;
+          if (poster) lightboxVideo.poster = poster;
+          if (lightboxVideo.getAttribute('src') !== src) {
+            lightboxVideo.src = src;
+          }
+          lightboxVideo.currentTime = 0;
+          lightboxVideo.play().catch(() => {});
+        } else {
+          if (lightboxVideo) {
+            lightboxVideo.pause();
+            lightboxVideo.hidden = true;
+          }
+          lightboxImg.hidden = false;
+          lightboxImg.src = src;
+        }
+
         if (lightboxTitle) lightboxTitle.textContent = title || 'Product Preview';
         if (lightboxDesc) lightboxDesc.textContent = desc || '';
         lightbox.classList.add('is-active');
@@ -3108,6 +3399,11 @@
 
       const closeLightbox = () => {
         if (!lightbox) return;
+        if (lightboxVideo) {
+          lightboxVideo.pause();
+          lightboxVideo.hidden = true;
+        }
+        if (lightboxImg) lightboxImg.hidden = false;
         lightbox.classList.remove('is-active');
         lightbox.setAttribute('aria-hidden', 'true');
         document.body.style.overflow = '';
@@ -3119,10 +3415,48 @@
         });
       });
 
+      document.querySelectorAll('[data-lightbox-video]').forEach((el) => {
+        el.addEventListener('click', () => {
+          openLightbox(el.dataset.lightboxVideo, el.dataset.title, el.dataset.desc, {
+            isVideo: true,
+            poster: el.dataset.poster || ''
+          });
+        });
+      });
+
+      document.querySelectorAll('[data-video-toggle]').forEach((btn) => {
+        const video = document.getElementById(btn.dataset.videoToggle);
+        if (!video) return;
+
+        const syncBtnState = () => {
+          const playing = !video.paused && !video.ended;
+          const useEl = btn.querySelector('use');
+          const labelEl = btn.querySelector('span');
+          if (useEl) useEl.setAttribute('href', playing ? '#icon-pause' : '#icon-play');
+          if (labelEl) labelEl.textContent = playing ? 'Pause' : 'Play';
+          btn.setAttribute('aria-pressed', String(playing));
+          btn.setAttribute('aria-label', playing ? 'Pause RathoreScan 3D demo video' : 'Play RathoreScan 3D demo video');
+        };
+
+        btn.addEventListener('click', () => {
+          if (video.paused || video.ended) video.play().catch(() => {});
+          else video.pause();
+        });
+
+        video.addEventListener('play', syncBtnState);
+        video.addEventListener('pause', syncBtnState);
+        syncBtnState();
+      });
+
       if (showcaseExpandBtn) {
         showcaseExpandBtn.addEventListener('click', () => {
           const meta = showcaseMeta[currentShowcase];
-          if (meta) openLightbox(meta.src, meta.title, meta.desc);
+          if (!meta) return;
+          if (meta.video) {
+            openLightbox(meta.video, meta.title, meta.desc, { isVideo: true, poster: meta.poster || '' });
+          } else {
+            openLightbox(meta.src, meta.title, meta.desc);
+          }
         });
       }
 

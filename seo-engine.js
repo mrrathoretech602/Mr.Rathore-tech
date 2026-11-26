@@ -107,14 +107,15 @@
       docsUrl: 'https://ekarshinga-engine.netlify.app/guide.html'
     },
     {
-      name: 'RathoreScan 3D Studio',
-      alternateName: 'RathoreScan3D Photogrammetry Studio',
+      name: 'RathoreScan 3D',
+      alternateName: 'RathoreScan 3D Local Laptop Studio',
       type: 'SoftwareApplication',
       category: 'MultimediaApplication',
-      operatingSystem: 'Linux, Windows, Web Browser (Three.js PWA)',
+      operatingSystem: 'Mobile, Tablet, Windows PC, Web Browser',
       version: '1.0.0',
-      description: 'Self-hosted 360-degree video-to-3D photogrammetry studio built with C++17 (COLMAP + OpenMVS), Go, and Three.js PWA for Unity and Unreal Engine 5 workflows.',
-      image: 'assets/rathorescan3d-shot.jpg',
+      description: 'Local-first 3D scanning and mesh optimization studio featuring a 3-stage pipeline (Capture, Build Engine, 3D Studio & Export), .OBJ mesh inspector, shading modes (Textured, Clay, Wire, Normals), and one-click High-Poly to Low-Poly optimization.',
+      image: 'assets/rathorescan3d-poster.jpg',
+      video: 'assets/video/rathorescan3d-demo.mp4',
       officialUrl: 'https://rathorescan3d.vercel.app/',
       docsUrl: 'https://github.com/mrrathoretech602/RathoreScan3D'
     },
@@ -263,7 +264,21 @@
           name: 'Mr. Rathore Tech',
           url: canonical
         }
-      }))
+      })),
+      {
+        '@type': 'VideoObject',
+        name: 'RathoreScan 3D — Local Laptop Studio Demo',
+        description: 'Screen-recorded product walkthrough of RathoreScan 3D demonstrating the 3-stage Capture, Build Engine, and 3D Studio & Export pipeline, .OBJ mesh inspection, shading modes, and High-Poly to Low-Poly optimization.',
+        thumbnailUrl: absolute('assets/rathorescan3d-poster.jpg'),
+        contentUrl: absolute('assets/video/rathorescan3d-demo.mp4'),
+        uploadDate: '2026-11-26T00:00:00+05:30',
+        duration: 'PT30S',
+        publisher: {
+          '@type': 'Organization',
+          name: 'Mr. Rathore Tech',
+          url: canonical
+        }
+      }
     ]
   });
 
